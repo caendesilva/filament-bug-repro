@@ -1,13 +1,23 @@
-## Unwanted space between Filament link and punctuation #8352
+# Social Laravel 10 FilamentPHP Starter Kit
 
-See https://github.com/filamentphp/filament/issues/8352
+**An opinionated starter project for [Laravel](https://laravel.com/) applications using [FilamentPHP](https://filamentphp.com/) as the main user frontend.**
 
-### Steps to reproduce
+### Main differences from the official Laravel/Filament skeletons
 
-Use the following Blade snippet:
+- **Tailored for web apps where the main UI is comprised with FilamentPHP.**
+- Filament is served from `/app` instead of `/admin` and is open to all registered users.
+- Both Filament Breezy and Filament Socialite come preinstalled and preconfigured.
+- Some views configured to allow better customization and interoperability with included packages.
+- Replaces Filament branding with configurable information about your site.
 
-```blade
-<p>
-    There will be a space after this <x-filament::link>link</x-filament::link>!
-</p>
-```
+### Additional features
+
+- The default database is set to SQLite for faster local development. 
+- The User migration is changed to make the password column nullable (as required for Socialite)
+- All changes are made in atomic Git commits, that allow you to roll back any changes you do not desire.
+- A small set of common social provider icons are included to be used in the social login buttons, ported from [Font Awesome](https://fontawesome.com/) via [Blade Font Awesome](https://github.com/owenvoke/blade-fontawesome) (MIT License).
+
+
+### License
+
+The customized code is under the MIT License. All other code falls under their original licenses, which are usually also the MIT License or other open source licenses. This repository is based on the default Laravel installation project, [Laravel/Laravel](https://github.com/laravel/laravel).
